@@ -29,24 +29,38 @@ li a {
 li a:hover {
   background-color: #182b49;
   color: white;
-
 }
 
 #menu {
+    padding: 15px;
+    width: 100%;
     position: sticky;
     top: 0;
     overflow: hidden;
     background-color: white;
-    padding: 15px 15px;
+}
+    
+#logo {
+    padding: 15px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    max-width: 75%;
+    margin: auto;  
+    padding-right: 110px;
 }
 
 #section1 {
+    width: 100%;
     background-color: rgba(245, 240, 230);
     font-size: 28px;
     padding: 15px;
 }
 
 #section2 {
+    width: 100%;
     background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
     font-size: 28px;
     color: white;
@@ -54,6 +68,7 @@ li a:hover {
 }
 
 #section3 {
+    width: 100%;
     padding: 15px;
     font-size: 28px;
     background-color: rgb(245, 240, 230);
@@ -71,4 +86,18 @@ li a:hover {
     text-align: center;
     overflow: scroll;
     max-height: 500px;
+}
+
+#logo {display: none}
+
+@media only screen and (max-width: 800px) {
+    #menu {display: none}
+    #logo {
+        display: grid; 
+    }
+    img {max-width: 100%}
+    h2 {font-size: 24px}
+    p {font-size: 20px}
+    
+    .grid {grid-template-columns: repeat(2, 2fr);}
 }
